@@ -157,36 +157,98 @@ animate('exp',20);animate('cases',500);animate('success',98);
 
 
 <!-- SOCIAL LINKS START -->
-<section class="social-section" style="padding:80px 20px;background:#0f0f0f;color:#fff;text-align:center;">
-  <h2 style="font-size:36px;margin-bottom:40px;">Connect With Our Team</h2>
-  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:40px;">
+<section class="social-section">
+  <style>
+    .social-section{
+      padding:100px 20px;
+      background:linear-gradient(135deg,#0f0f0f,#1c1c1c);
+      color:#fff;
+      text-align:center;
+    }
+    .social-section h2{
+      font-size:42px;
+      margin-bottom:60px;
+      letter-spacing:1px;
+    }
+    .social-grid{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:50px;
+    }
+    .social-card{
+      background:rgba(255,255,255,0.05);
+      backdrop-filter:blur(10px);
+      border:1px solid rgba(255,215,0,0.3);
+      padding:40px 30px;
+      border-radius:25px;
+      width:300px;
+      transition:0.4s ease;
+      box-shadow:0 20px 40px rgba(0,0,0,0.6);
+    }
+    .social-card:hover{
+      transform:translateY(-12px);
+      box-shadow:0 25px 60px rgba(255,215,0,0.4);
+    }
+    .social-card img{
+      width:130px;
+      height:130px;
+      border-radius:50%;
+      object-fit:cover;
+      margin-bottom:25px;
+      border:4px solid gold;
+    }
+    .social-card h3{
+      margin-bottom:20px;
+      font-size:22px;
+    }
+    .social-links a{
+      display:inline-block;
+      margin:8px 6px;
+      padding:8px 18px;
+      border-radius:30px;
+      font-size:14px;
+      text-decoration:none;
+      color:#000;
+      background:gold;
+      transition:0.3s ease;
+    }
+    .social-links a:hover{
+      background:#fff;
+      transform:scale(1.05);
+    }
+  </style>
 
-    <div style="background:#1a1a1a;padding:30px;border-radius:20px;width:280px;box-shadow:0 10px 30px rgba(0,0,0,0.5);">
-      <img src="https://www.facebook.com/saim.babartoor.1/picture?type=large" style="width:120px;height:120px;border-radius:50%;object-fit:cover;margin-bottom:20px;" alt="Saim Babar Rasool Toor">
+  <h2>Media & Public Presence</h2>
+
+  <div class="social-grid">
+
+    <div class="social-card">
+      <img src="https://www.facebook.com/saim.babartoor.1/picture?type=large" alt="Saim Babar Rasool Toor">
       <h3>Saim Babar Rasool Toor</h3>
-      <p>
-        <a href="https://www.facebook.com/saim.babartoor.1" target="_blank">Facebook</a> | 
-        <a href="https://www.instagram.com/saim_kiduniya456" target="_blank">Instagram</a> | 
-        <a href="https://www.tiktok.com/@saim.babar.rasool456" target="_blank">TikTok</a> | 
+      <div class="social-links">
+        <a href="https://www.facebook.com/saim.babartoor.1" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/saim_kiduniya456" target="_blank">Instagram</a>
+        <a href="https://www.tiktok.com/@saim.babar.rasool456" target="_blank">TikTok</a>
         <a href="https://www.youtube.com/@Sa_imbabarrasool654" target="_blank">YouTube</a>
-      </p>
+      </div>
     </div>
 
-    <div style="background:#1a1a1a;padding:30px;border-radius:20px;width:280px;box-shadow:0 10px 30px rgba(0,0,0,0.5);">
-      <img src="https://www.facebook.com/babartoor/picture?type=large" style="width:120px;height:120px;border-radius:50%;object-fit:cover;margin-bottom:20px;" alt="Basharat Rasool Babar">
+    <div class="social-card">
+      <img src="https://www.facebook.com/babartoor/picture?type=large" alt="Basharat Rasool Babar">
       <h3>Basharat Rasool Babar</h3>
-      <p>
-        <a href="https://www.facebook.com/babartoor" target="_blank">Facebook</a> | 
+      <div class="social-links">
+        <a href="https://www.facebook.com/babartoor" target="_blank">Facebook</a>
         <a href="https://www.instagram.com/babartoor" target="_blank">Instagram</a>
-      </p>
+      </div>
     </div>
 
-    <div style="background:#1a1a1a;padding:30px;border-radius:20px;width:280px;box-shadow:0 10px 30px rgba(0,0,0,0.5);">
-      <img src="https://www.facebook.com/noman.toor.3/picture?type=large" style="width:120px;height:120px;border-radius:50%;object-fit:cover;margin-bottom:20px;" alt="Noman Toor">
+    <div class="social-card">
+      <img src="https://www.facebook.com/noman.toor.3/picture?type=large" alt="Noman Toor">
       <h3>Noman Toor</h3>
-      <p>
+      <div class="social-links">
         <a href="https://www.facebook.com/noman.toor.3" target="_blank">Facebook</a>
-      </p>
+      </div>
     </div>
 
   </div>
