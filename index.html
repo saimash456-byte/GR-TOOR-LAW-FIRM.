@@ -3,257 +3,184 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>G.R TOOR LAW FIRM | Official Website</title>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<title>G.R Toor Law Firm | Corporate Legal Excellence</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
-:root{--primary:#0a0f1f;--gold:#d4af37;--light:#f4f6fb;--dark:#020617;}
-*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
-body{font-family:'Poppins',sans-serif;background:var(--light);color:#333;}
-header{background:linear-gradient(rgba(2,6,23,0.88),rgba(2,6,23,0.88)),url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f');background-size:cover;background-position:center;color:white;text-align:center;padding:160px 20px;}
-header h1{font-family:'Cinzel',serif;font-size:58px;letter-spacing:4px;color:var(--gold);} 
-header p{margin-top:20px;font-size:22px;color:#ddd;}
-.btn{display:inline-block;margin-top:35px;padding:16px 40px;background:var(--gold);color:black;text-decoration:none;border-radius:50px;font-weight:600;transition:0.4s;}
-.btn:hover{background:white;transform:scale(1.08);} 
-nav{background:rgba(10,15,31,0.95);padding:20px;text-align:center;position:sticky;top:0;z-index:1000;backdrop-filter:blur(8px);} 
-nav a{color:white;margin:0 22px;text-decoration:none;font-weight:500;transition:0.3s;} 
-nav a:hover{color:var(--gold);} 
-.container{max-width:1250px;margin:100px auto;padding:0 20px;} 
-.section{margin-bottom:120px;} 
-.section h2{font-family:'Cinzel',serif;font-size:36px;margin-bottom:50px;text-align:center;color:var(--primary);} 
-.section h2::after{content:'';width:90px;height:3px;background:var(--gold);display:block;margin:15px auto 0;} 
-.card{background:white;padding:40px;border-radius:25px;box-shadow:0 25px 60px rgba(0,0,0,0.08);transition:0.4s;text-align:center;} 
-.card:hover{transform:translateY(-12px);box-shadow:0 30px 70px rgba(0,0,0,0.18);} 
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px;} 
-.highlight{color:var(--gold);font-weight:600;font-size:18px;} 
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth}
+body{background:#0e0e0e;color:#fff}
 
-/* TEAM IMAGE STYLE */
-.team-img{width:120px;height:120px;border-radius:50%;object-fit:cover;border:4px solid var(--gold);margin-bottom:20px;} 
+/* NAVBAR */
+header{
+position:fixed;
+width:100%;
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(10px);
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+border-bottom:1px solid rgba(255,215,0,0.2);
+}
+header h1{color:gold;font-size:22px;letter-spacing:1px}
+nav a{color:#fff;text-decoration:none;margin-left:25px;font-size:14px;transition:0.3s}
+nav a:hover{color:gold}
 
-/* STATS */
-.stats{background:linear-gradient(135deg,var(--primary),#111c3a);color:white;padding:90px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));text-align:center;gap:40px;} 
-.stats h3{font-size:48px;color:var(--gold);} 
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:0 20px;
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)),url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f') center/cover;
+}
+.hero h2{font-size:52px;margin-bottom:20px}
+.hero p{max-width:700px;font-size:18px;margin-bottom:35px;color:#ddd}
+.hero a{
+padding:14px 35px;
+background:gold;
+color:#000;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+transition:0.3s}
+.hero a:hover{background:#fff;transform:scale(1.05)}
+
+/* SECTION */
+section{padding:100px 8%}
+h2.section-title{text-align:center;font-size:40px;margin-bottom:60px;color:gold}
+
+/* SERVICES */
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px}
+.service-card{
+background:#1a1a1a;
+padding:40px 25px;
+border-radius:20px;
+text-align:center;
+transition:0.4s;
+border:1px solid rgba(255,215,0,0.2)}
+.service-card:hover{transform:translateY(-10px);box-shadow:0 20px 40px rgba(255,215,0,0.3)}
+.service-card h3{margin-bottom:15px;color:gold}
+.service-card p{font-size:14px;color:#ccc}
+
+/* TEAM SOCIAL */
+.social-section{background:linear-gradient(135deg,#111,#1c1c1c)}
+.social-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:50px}
+.social-card{
+background:rgba(255,255,255,0.05);
+padding:40px 30px;
+border-radius:25px;
+width:300px;
+text-align:center;
+transition:0.4s;
+border:1px solid rgba(255,215,0,0.3)}
+.social-card:hover{transform:translateY(-12px);box-shadow:0 25px 60px rgba(255,215,0,0.4)}
+.social-card img{
+width:130px;height:130px;border-radius:50%;object-fit:cover;margin-bottom:20px;border:4px solid gold}
+.social-card h3{margin-bottom:20px}
+.social-links a{
+display:inline-block;margin:6px;padding:8px 18px;border-radius:30px;background:gold;color:#000;text-decoration:none;font-size:13px;transition:0.3s}
+.social-links a:hover{background:#fff;transform:scale(1.05)}
 
 /* CONTACT */
-.contact-box{background:linear-gradient(135deg,var(--primary),#1e293b);color:white;padding:80px;border-radius:30px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:50px;} 
-.contact-box h3{color:var(--gold);margin-bottom:20px;} 
-.contact-box input,.contact-box textarea{width:100%;padding:15px;border:none;border-radius:10px;margin-bottom:15px;} 
-.contact-box button{padding:15px 30px;border:none;background:var(--gold);font-weight:600;border-radius:30px;cursor:pointer;} 
+.contact-box{
+max-width:600px;margin:auto;background:#1a1a1a;padding:40px;border-radius:20px;border:1px solid rgba(255,215,0,0.2)}
+.contact-box input,.contact-box textarea{
+width:100%;margin-bottom:15px;padding:12px;border:none;border-radius:10px;background:#111;color:#fff}
+.contact-box button{
+padding:12px 30px;border:none;border-radius:30px;background:gold;color:#000;font-weight:600;cursor:pointer;transition:0.3s}
+.contact-box button:hover{background:#fff}
 
-iframe{width:100%;height:300px;border-radius:20px;border:none;margin-top:20px;} 
+/* FOOTER */
+footer{
+text-align:center;padding:30px;background:#000;border-top:1px solid rgba(255,215,0,0.2);color:#aaa;font-size:13px}
 
-.whatsapp{position:fixed;bottom:25px;right:25px;background:#25D366;color:white;padding:15px 18px;border-radius:50%;font-size:22px;text-decoration:none;box-shadow:0 10px 25px rgba(0,0,0,0.3);} 
-footer{background:var(--dark);color:#aaa;text-align:center;padding:35px;font-size:14px;} 
-@media(max-width:768px){header h1{font-size:34px;}header{padding:100px 20px;} .contact-box{padding:40px;}} 
+@media(max-width:768px){
+.hero h2{font-size:34px}
+}
 </style>
 </head>
+
 <body>
 
 <header>
 <h1>G.R TOOR LAW FIRM</h1>
-<p>Elite High Court & Subordinate Courts Legal Practitioners</p>
-<a href="#contact" class="btn">Request Legal Consultation</a>
-</header>
-
 <nav>
-<a href="#about">About</a>
+<a href="#services">Services</a>
 <a href="#team">Team</a>
-<a href="#practice">Practice Areas</a>
 <a href="#contact">Contact</a>
 </nav>
+</header>
 
-<div class="container">
+<section class="hero">
+<h2>Corporate Legal Excellence</h2>
+<p>Delivering powerful legal representation with integrity, strategy, and results. Trusted expertise in criminal, civil, family and corporate law matters.</p>
+<a href="#contact">Book Consultation</a>
+</section>
 
-<div id="about" class="section">
-<h2>Senior Advocate</h2>
-<div class="card">
-<h3>Basharat Rasul Babar Toor</h3>
-<p class="highlight">Advocate High Court</p>
-<p><strong>Legal Advisor:</strong> NRSP Bank, LOLC Bank, U Bank</p>
-<p>Email: babartoor@gmail.com</p>
-<p>Phone: 0345-7461644 | 0300-7840810</p>
+<section id="services">
+<h2 class="section-title">Our Expertise</h2>
+<div class="services">
+<div class="service-card"><h3>Criminal Law</h3><p>Strong courtroom defense and legal protection.</p></div>
+<div class="service-card"><h3>Family Law</h3><p>Professional handling of sensitive family matters.</p></div>
+<div class="service-card"><h3>Civil Litigation</h3><p>Effective representation in civil disputes.</p></div>
+<div class="service-card"><h3>Corporate Law</h3><p>Legal strategy for business growth & compliance.</p></div>
 </div>
-</div>
+</section>
 
-<div id="team" class="section">
-<h2>Our Legal Experts</h2>
-<div class="grid">
-<div class="card">
-<img src="https://randomuser.me/api/portraits/men/32.jpg" class="team-img">
-<h3>Peerzada Hafizullah</h3>
-<p>Advocate High Court</p>
-<p>0300-4323533</p>
-</div>
-<div class="card">
-<img src="https://randomuser.me/api/portraits/men/45.jpg" class="team-img">
-<h3>Saim Babar Toor</h3>
-<p>Advocate</p>
-</div>
-<div class="card">
-<img src="https://randomuser.me/api/portraits/men/65.jpg" class="team-img">
-<h3>Nauman Manzoor Toor</h3>
-<p>Advocate</p>
-</div>
-<div class="card">
-<img src="https://randomuser.me/api/portraits/men/75.jpg" class="team-img">
-<h3>M. Yaseen Toor</h3>
-<p>Advocate</p>
-<p>0345-7888078</p>
-</div>
+<section id="team" class="social-section">
+<h2 class="section-title">Media & Public Presence</h2>
+<div class="social-grid">
+
+<div class="social-card">
+<img src="https://www.facebook.com/saim.babartoor.1/picture?type=large">
+<h3>Saim Babar Rasool Toor</h3>
+<div class="social-links">
+<a href="https://www.facebook.com/saim.babartoor.1" target="_blank">Facebook</a>
+<a href="https://www.instagram.com/saim_kiduniya456" target="_blank">Instagram</a>
+<a href="https://www.tiktok.com/@saim.babar.rasool456" target="_blank">TikTok</a>
+<a href="https://www.youtube.com/@Sa_imbabarrasool654" target="_blank">YouTube</a>
 </div>
 </div>
 
-<div id="practice" class="section">
-<h2>Practice Areas</h2>
-<div class="grid">
-<div class="card">Corporate & Banking Law</div>
-<div class="card">Civil & Criminal Litigation</div>
-<div class="card">Family & Inheritance Law</div>
-<div class="card">Property & Land Disputes</div>
+<div class="social-card">
+<img src="https://www.facebook.com/babartoor/picture?type=large">
+<h3>Basharat Rasool Babar</h3>
+<div class="social-links">
+<a href="https://www.facebook.com/babartoor" target="_blank">Facebook</a>
+<a href="https://www.instagram.com/babartoor" target="_blank">Instagram</a>
+</div>
+</div>
+
+<div class="social-card">
+<img src="https://www.facebook.com/noman.toor.3/picture?type=large">
+<h3>Noman Toor</h3>
+<div class="social-links">
+<a href="https://www.facebook.com/noman.toor.3" target="_blank">Facebook</a>
 </div>
 </div>
 
 </div>
+</section>
 
-<div class="stats">
-<div><h3 id="exp">0</h3><p>Years Experience</p></div>
-<div><h3 id="cases">0</h3><p>Cases Handled</p></div>
-<div><h3 id="success">0</h3><p>Client Satisfaction %</p></div>
-<div><h3>24/7</h3><p>Legal Support</p></div>
-</div>
-
-<div class="container" id="contact">
-<div class="section">
-<h2>Book Appointment</h2>
+<section id="contact">
+<h2 class="section-title">Request Consultation</h2>
 <div class="contact-box">
-<div>
-<h3>Office Address</h3>
-<p>13 Quaid-e-Azam Block,<br>Near Thana City, Jaranwala</p>
-<iframe src="https://www.google.com/maps?q=Jaranwala&output=embed"></iframe>
+<input type="text" placeholder="Full Name">
+<input type="email" placeholder="Email Address">
+<textarea rows="4" placeholder="Your Legal Matter"></textarea>
+<button>Submit Request</button>
 </div>
-<div>
-<h3>Send Message</h3>
-<form>
-<input type="text" placeholder="Your Name" required>
-<input type="email" placeholder="Your Email" required>
-<textarea rows="4" placeholder="Your Message"></textarea>
-<button type="submit">Submit Request</button>
-</form>
-</div>
-</div>
-</div>
-</div>
-
-<a href="https://wa.me/923457461644" class="whatsapp">💬</a>
+</section>
 
 <footer>
-© 2026 G.R TOOR LAW FIRM | Elite Legal Excellence | All Rights Reserved
+© 2026 G.R Toor Law Firm | All Rights Reserved
 </footer>
-
-<script>
-function animate(id,end){let start=0;let el=document.getElementById(id);let interval=setInterval(()=>{start++;el.textContent=start;if(start>=end)clearInterval(interval);},20);} 
-animate('exp',20);animate('cases',500);animate('success',98);
-</script>
-
-
-
-<!-- SOCIAL LINKS START -->
-<section class="social-section">
-  <style>
-    .social-section{
-      padding:100px 20px;
-      background:linear-gradient(135deg,#0f0f0f,#1c1c1c);
-      color:#fff;
-      text-align:center;
-    }
-    .social-section h2{
-      font-size:42px;
-      margin-bottom:60px;
-      letter-spacing:1px;
-    }
-    .social-grid{
-      display:flex;
-      flex-wrap:wrap;
-      justify-content:center;
-      gap:50px;
-    }
-    .social-card{
-      background:rgba(255,255,255,0.05);
-      backdrop-filter:blur(10px);
-      border:1px solid rgba(255,215,0,0.3);
-      padding:40px 30px;
-      border-radius:25px;
-      width:300px;
-      transition:0.4s ease;
-      box-shadow:0 20px 40px rgba(0,0,0,0.6);
-    }
-    .social-card:hover{
-      transform:translateY(-12px);
-      box-shadow:0 25px 60px rgba(255,215,0,0.4);
-    }
-    .social-card img{
-      width:130px;
-      height:130px;
-      border-radius:50%;
-      object-fit:cover;
-      margin-bottom:25px;
-      border:4px solid gold;
-    }
-    .social-card h3{
-      margin-bottom:20px;
-      font-size:22px;
-    }
-    .social-links a{
-      display:inline-block;
-      margin:8px 6px;
-      padding:8px 18px;
-      border-radius:30px;
-      font-size:14px;
-      text-decoration:none;
-      color:#000;
-      background:gold;
-      transition:0.3s ease;
-    }
-    .social-links a:hover{
-      background:#fff;
-      transform:scale(1.05);
-    }
-  </style>
-
-  <h2>Media & Public Presence</h2>
-
-  <div class="social-grid">
-
-    <div class="social-card">
-      <img src="https://www.facebook.com/saim.babartoor.1/picture?type=large" alt="Saim Babar Rasool Toor">
-      <h3>Saim Babar Rasool Toor</h3>
-      <div class="social-links">
-        <a href="https://www.facebook.com/saim.babartoor.1" target="_blank">Facebook</a>
-        <a href="https://www.instagram.com/saim_kiduniya456" target="_blank">Instagram</a>
-        <a href="https://www.tiktok.com/@saim.babar.rasool456" target="_blank">TikTok</a>
-        <a href="https://www.youtube.com/@Sa_imbabarrasool654" target="_blank">YouTube</a>
-      </div>
-    </div>
-
-    <div class="social-card">
-      <img src="https://www.facebook.com/babartoor/picture?type=large" alt="Basharat Rasool Babar">
-      <h3>Basharat Rasool Babar</h3>
-      <div class="social-links">
-        <a href="https://www.facebook.com/babartoor" target="_blank">Facebook</a>
-        <a href="https://www.instagram.com/babartoor" target="_blank">Instagram</a>
-      </div>
-    </div>
-
-    <div class="social-card">
-      <img src="https://www.facebook.com/noman.toor.3/picture?type=large" alt="Noman Toor">
-      <h3>Noman Toor</h3>
-      <div class="social-links">
-        <a href="https://www.facebook.com/noman.toor.3" target="_blank">Facebook</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-<!-- SOCIAL LINKS END -->
 
 </body>
 </html>
