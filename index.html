@@ -3,177 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="G.R TOOR LAW FIRM Jaranwala - Expert Legal Services by Basharat Rasul Babar Toor Advocate High Court.">
-    <title>G.R TOOR LAW FIRM | Official Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>G.R TOOR LAW FIRM | Premium Legal Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        :root{
-            --primary:#0b132b;
-            --gold:#d4af37;
-            --light:#f9fafc;
-            --dark:#030712;
-        }
-        *{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
-        body{font-family:'Poppins',sans-serif;background:var(--light);color:#333; overflow-x: hidden;}
-
-        header{
-            background:linear-gradient(rgba(3,7,18,0.85),rgba(3,7,18,0.85)),url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f');
-            background-size:cover;
-            background-position:center;
-            color:white;
-            text-align:center;
-            padding:140px 20px;
-        }
-        header h1{
-            font-family:'Cinzel',serif;
-            font-size:52px;
-            letter-spacing:4px;
-            color:var(--gold);
-            animation:fadeDown 1.5s ease;
-        }
-        header p{margin-top:20px;font-size:22px;color:#ddd;animation:fadeUp 2s ease;}
-
-        nav{
-            background:var(--primary);
-            padding:20px;
-            text-align:center;
-            position:sticky;
-            top:0;
-            z-index:1000;
-            box-shadow:0 5px 15px rgba(0,0,0,0.3);
-        }
-        nav a{color:white; margin:0 20px; text-decoration:none; font-weight:500; transition:0.3s;}
-        nav a:hover{color:var(--gold);}
-
-        .container{max-width:1200px;margin:90px auto;padding:0 20px;}
-        .section{margin-bottom:100px;}
-        .section h2{
-            font-family:'Cinzel',serif;
-            font-size:34px;
-            margin-bottom:40px;
-            text-align:center;
-            color:var(--primary);
-        }
-        .section h2::after{
-            content:''; width:80px; height:3px; background:var(--gold); display:block; margin:10px auto 0;
+        :root {
+            --primary: #0a1128;
+            --accent: #c5a059; /* Sophisticated Gold */
+            --glass: rgba(255, 255, 255, 0.95);
+            --text: #1a1a1a;
         }
 
-        .card{
-            background:white;
-            padding:35px;
-            border-radius:20px;
-            box-shadow:0 20px 45px rgba(0,0,0,0.08);
-            transition:0.4s;
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; background: #f4f7f6; color: var(--text); line-height: 1.6; }
+
+        /* Hero Section with Parallax Effect */
+        header {
+            height: 80vh;
+            background: linear-gradient(to right, rgba(10, 17, 40, 0.9), rgba(10, 17, 40, 0.6)), 
+                        url('https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=2070');
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            color: var(--accent);
+            letter-spacing: 5px;
+            margin-bottom: 15px;
+        }
+
+        header p { font-size: 1.2rem; letter-spacing: 2px; text-transform: uppercase; opacity: 0.9; }
+
+        /* Navigation */
+        nav {
+            background: var(--primary);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 25px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: var(--accent); }
+
+        /* Professional Cards */
+        .container { max-width: 1200px; margin: -50px auto 100px; padding: 0 20px; position: relative; }
+
+        .main-card {
+            background: white;
+            padding: 60px;
+            border-radius: 5px;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+            border-top: 5px solid var(--accent);
             text-align: center;
         }
-        .card:hover{transform:translateY(-8px); box-shadow:0 25px 60px rgba(0,0,0,0.15);}
 
-        .grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:35px;}
-        
-        .btn{
-            display:inline-block;
-            margin-top:30px;
-            padding:15px 35px;
-            background:var(--gold);
-            color:black;
-            text-decoration:none;
-            border-radius:40px;
-            font-weight:600;
-            transition:0.4s;
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 50px; }
+
+        .team-card {
+            background: var(--glass);
+            padding: 30px;
+            border: 1px solid #eee;
+            transition: all 0.4s ease;
         }
-        .btn:hover{background:white; transform:scale(1.05);}
 
-        .stats{
-            background:var(--primary);
-            color:white;
-            padding:70px 20px;
-            text-align:center;
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-            gap:30px;
+        .team-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-10px);
+            background: var(--primary);
+            color: white;
         }
-        .stats h3{font-size:40px;color:var(--gold);}
 
-        .contact-box{
-            background:linear-gradient(135deg,var(--primary),#1e293b);
-            color:white;
-            padding:60px;
-            border-radius:25px;
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-            gap:40px;
+        .team-card h4 { font-family: 'Cinzel', serif; margin-bottom: 10px; }
+
+        /* Practice Areas Edits */
+        .practice-tag {
+            display: inline-block;
+            padding: 8px 20px;
+            border: 1px solid var(--accent);
+            margin: 5px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: 0.3s;
         }
-        
-        footer{background:var(--dark); color:#aaa; text-align:center; padding:30px; font-size:14px;}
 
-        @keyframes fadeDown{from{opacity:0;transform:translateY(-30px);}to{opacity:1;transform:translateY(0);}}
-        @keyframes fadeUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
+        .practice-tag:hover { background: var(--accent); color: white; }
+
+        /* Contact Section */
+        .contact-strip {
+            background: var(--primary);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .cta-btn {
+            background: var(--accent);
+            color: var(--primary);
+            padding: 18px 45px;
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-block;
+            margin-top: 30px;
+            border-radius: 2px;
+            transition: 0.4s;
+        }
+
+        .cta-btn:hover { background: white; transform: scale(1.05); }
+
+        footer { background: #050a18; color: #666; padding: 40px; text-align: center; font-size: 0.8rem; }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            nav a { margin: 0 10px; font-size: 0.7rem; }
+        }
     </style>
 </head>
 <body>
 
 <header>
     <h1>G.R TOOR LAW FIRM</h1>
-    <p>High Court & Subordinate Courts Legal Practitioners</p>
-    <a href="tel:03457461644" class="btn">Call for Consultation</a>
+    <p>Advocates & Legal Consultants</p>
 </header>
 
 <nav>
-    <a href="#about">Senior Advocate</a>
-    <a href="#team">Our Team</a>
+    <a href="#about">The Firm</a>
+    <a href="#team">Counsel</a>
     <a href="#practice">Expertise</a>
-    <a href="#contact">Location</a>
+    <a href="#contact">Contact</a>
 </nav>
 
 <div class="container">
-    <div id="about" class="section">
-        <h2>Senior Counsel</h2>
-        <div class="card">
-            <h3 style="color:var(--primary)">Basharat Rasul Babar Toor</h3>
-            <p style="color:var(--gold); font-weight:600;">Advocate High Court</p>
-            <p style="margin-top:10px;"><strong>Legal Advisor:</strong> NRSP Bank, LOLC Bank, U Bank</p>
-            <p>Email: babartoor@gmail.com</p>
-            <p>Direct: 0345-7461644</p>
+    <div id="about" class="main-card">
+        <h2 style="font-family: 'Cinzel', serif; margin-bottom: 20px;">Basharat Rasul Babar Toor</h2>
+        <p style="color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: 2px;">Senior Advocate High Court</p>
+        <div style="max-width: 700px; margin: 30px auto; color: #555;">
+            Serving as a dedicated Legal Advisor for <strong>NRSP Bank, LOLC Bank, and U Bank</strong>. 
+            Providing strategic legal counsel with over two decades of courtroom excellence.
+        </div>
+        <div id="practice">
+            <span class="practice-tag">CORPORATE LAW</span>
+            <span class="practice-tag">BANKING LITIGATION</span>
+            <span class="practice-tag">CIVIL LAW</span>
+            <span class="practice-tag">CRIMINAL DEFENSE</span>
         </div>
     </div>
 
-    <div id="team" class="section">
-        <h2>Professional Team</h2>
-        <div class="grid">
-            <div class="card"><strong>P. Hafizullah</strong><br>Advocate High Court</div>
-            <div class="card"><strong>Saim Babar Toor</strong><br>Advocate</div>
-            <div class="card"><strong>Nauman M. Toor</strong><br>Advocate</div>
-            <div class="card"><strong>M. Yaseen Toor</strong><br>Advocate</div>
+    <div id="team" class="grid">
+        <div class="team-card">
+            <h4>P. Hafizullah</h4>
+            <p>Advocate High Court</p>
+            <p style="font-size: 0.8rem; margin-top: 10px;">0300-4323533</p>
+        </div>
+        <div class="team-card">
+            <h4>Saim Babar Toor</h4>
+            <p>Advocate</p>
+        </div>
+        <div class="team-card">
+            <h4>Nauman M. Toor</h4>
+            <p>Advocate</p>
+        </div>
+        <div class="team-card">
+            <h4>M. Yaseen Toor</h4>
+            <p>Advocate</p>
+            <p style="font-size: 0.8rem; margin-top: 10px;">0345-7888078</p>
         </div>
     </div>
 </div>
 
-<div class="stats">
-    <div><h3>20+</h3><p>Years of Practice</p></div>
-    <div><h3>500+</h3><p>Successful Cases</p></div>
-    <div><h3>24/7</h3><p>Legal Assistance</p></div>
-</div>
-
-<div class="container" id="contact">
-    <div class="section">
-        <h2>Visit Our Office</h2>
-        <div class="contact-box">
-            <div>
-                <h3 style="color:var(--gold)">Address</h3>
-                <p>13 Quaid-e-Azam Block, Near Thana City, Jaranwala</p>
-                <p style="margin-top:10px;"><strong>Clerk:</strong> Akbar Iqbal</p>
-                <p>📞 0341-7853653</p>
-            </div>
-            <div>
-                <h3 style="color:var(--gold)">Connect</h3>
-                <a href="https://wa.me/923457461644" class="btn">WhatsApp Now</a>
-            </div>
-        </div>
-    </div>
+<div class="contact-strip" id="contact">
+    <h2 style="font-family: 'Cinzel', serif; color: var(--accent);">Legal Consultation</h2>
+    <p style="margin-top: 15px;">13 Quaid-e-Azam Block, Near Thana City, Jaranwala</p>
+    <p>Office Clerk: Akbar Iqbal | 0341-7853653</p>
+    <a href="https://wa.me/923457461644" class="btn cta-btn">SECURE AN APPOINTMENT</a>
 </div>
 
 <footer>
-    © 2026 G.R TOOR LAW FIRM | Excellence in Legal Services | Jaranwala
+    &copy; 2026 G.R TOOR LAW FIRM. ALL RIGHTS RESERVED. <br>
+    ESTABLISHED EXCELLENCE IN JARANWALA.
 </footer>
 
 </body>
